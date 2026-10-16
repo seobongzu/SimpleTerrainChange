@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsUseCraftingSpot"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>JGH_WaterGatheringSpot</li>
+					<li>JGH_SoilGatheringSpot</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Soil" or defName="SoilRich" or defName="PackedDirt" or defName="Gravel" or defName="Sand" or defName="SoftSand" or defName="MossyTerrain" or defName="MarshyTerrain" or defName="Marsh" or defName="Mud"]/statBases</xpath>
+				<value>
+					<MarketValue>0</MarketValue>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[@Name="WaterBase"]</xpath>
+				<value>
+					<statBases>
+						<MarketValue>0</MarketValue>
+					</statBases>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Soil" or defName="SoilRich" or defName="PackedDirt" or defName="Gravel" or defName="Sand" or defName="SoftSand" or defName="WaterShallow" or defName="MossyTerrain" or defName="MarshyTerrain" or defName="Marsh" or defName="Mud"]</xpath>
+				<value>
+					<designationCategory>Floors</designationCategory>
+					<constructEffect>ConstructDirt</constructEffect>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Soil"]</xpath>
+				<value>
+					<costList>
+						<JGH_Soil>12</JGH_Soil>
+					</costList>
+					<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+					<designatorDropdown>SoilGroup</designatorDropdown>
+					<uiOrder>1900</uiOrder>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Soil"]/statBases</xpath>
+				<value>
+					<WorkToBuild>150</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="SoilRich"]</xpath>
+				<value>
+					<researchPrerequisites><li>JGH_RichSoil</li></researchPrerequisites>
+					<costList>
+						<Neutroamine>12</Neutroamine>
+					</costList>				
+					<terrainAffordanceNeeded>JGH_Soil</terrainAffordanceNeeded>
+					<designatorDropdown>SoilGroup</designatorDropdown>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="SoilRich"]/statBases</xpath>
+				<value>
+					<WorkToBuild>900</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="PackedDirt"]</xpath>
+				<value>
+					<terrainAffordanceNeeded>JGH_Soil</terrainAffordanceNeeded>
+					<designatorDropdown>SoilGroup</designatorDropdown>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="PackedDirt"]/statBases</xpath>
+				<value>
+					<WorkToBuild>450</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Gravel"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>12</JGH_Water>
+					</costList>				
+					<terrainAffordanceNeeded>JGH_Soil</terrainAffordanceNeeded>
+					<designatorDropdown>WaterShallowGroup</designatorDropdown>
+					<uiOrder>1903</uiOrder>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Gravel"]/statBases</xpath>
+				<value>
+					<WorkToBuild>450</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Sand"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>12</JGH_Water>
+					</costList>					
+					<terrainAffordanceNeeded>JGH_Gravel</terrainAffordanceNeeded>
+					<designatorDropdown>WaterShallowGroup</designatorDropdown>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Sand"]/statBases</xpath>
+				<value>
+					<WorkToBuild>450</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="SoftSand"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>12</JGH_Water>
+					</costList>				
+					<terrainAffordanceNeeded>JGH_Sand</terrainAffordanceNeeded>
+					<designatorDropdown>WaterShallowGroup</designatorDropdown>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="SoftSand"]/statBases</xpath>
+				<value>
+					<WorkToBuild>450</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>24</JGH_Water>
+					</costList>					
+					<terrainAffordanceNeeded>JGH_SoftSand</terrainAffordanceNeeded>
+					<designatorDropdown>WaterShallowGroup</designatorDropdown>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
+				<value>
+					<statBases>
+						<WorkToBuild>900</WorkToBuild>
+					</statBases>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Mud"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>36</JGH_Water>
+					</costList>				
+					<terrainAffordanceNeeded>JGH_Soil</terrainAffordanceNeeded>
+					<uiOrder>1907</uiOrder>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Mud"]/statBases</xpath>
+				<value>
+					<WorkToBuild>900</WorkToBuild>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="MossyTerrain"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>18</JGH_Water>
+					</costList>					
+					<terrainAffordanceNeeded>JGH_Soil</terrainAffordanceNeeded>
+					<designatorDropdown>MarshGroup</designatorDropdown>
+					<uiOrder>1911</uiOrder>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="MossyTerrain"]/statBases</xpath>
+				<value>
+					<WorkToBuild>450</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="MarshyTerrain"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>18</JGH_Water>
+					</costList>					
+					<terrainAffordanceNeeded>JGH_MossyTerrain</terrainAffordanceNeeded>
+					<designatorDropdown>MarshGroup</designatorDropdown>
+				</value>
+			</li>			
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="MarshyTerrain"]/statBases</xpath>
+				<value>
+					<WorkToBuild>450</WorkToBuild>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Marsh"]</xpath>
+				<value>
+					<costList>
+						<JGH_Water>24</JGH_Water>
+					</costList>
+					<terrainAffordanceNeeded>JGH_MarshyTerrain</terrainAffordanceNeeded>
+					<designatorDropdown>MarshGroup</designatorDropdown>
+				</value>
+			</li>			
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Marsh"]/statBases</xpath>
+				<value>
+					<WorkToBuild>900</WorkToBuild>
+				</value>
+			</li>
+			
+			<!--Affordances-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Soil"]/affordances</xpath>
+				<value>
+					<li>JGH_Soil</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Gravel"]/affordances</xpath>
+				<value>
+					<li>JGH_Gravel</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="Sand"]/affordances</xpath>
+				<value>
+					<li>JGH_Sand</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="SoftSand"]/affordances</xpath>
+				<value>
+					<li>JGH_SoftSand</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="MossyTerrain"]/affordances</xpath>
+				<value>
+					<li>JGH_MossyTerrain</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="MarshyTerrain"]/affordances</xpath>
+				<value>
+					<li>JGH_MarshyTerrain</li>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>

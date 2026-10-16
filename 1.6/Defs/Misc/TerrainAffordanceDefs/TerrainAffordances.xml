@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainAffordanceDef>
+		<defName>JGH_Soil</defName>
+		<label>soil</label>
+	</TerrainAffordanceDef>
+
+	<TerrainAffordanceDef>
+		<defName>JGH_Gravel</defName>
+		<label>stony soil</label>
+	</TerrainAffordanceDef>
+
+	<TerrainAffordanceDef>
+		<defName>JGH_Sand</defName>
+		<label>sand</label>
+	</TerrainAffordanceDef>
+
+	<TerrainAffordanceDef>
+		<defName>JGH_SoftSand</defName>
+		<label>soft sand</label>
+	</TerrainAffordanceDef>
+
+	<TerrainAffordanceDef>
+		<defName>JGH_MossyTerrain</defName>
+		<label>lichen-covered soil</label>
+	</TerrainAffordanceDef>
+
+	<TerrainAffordanceDef>
+		<defName>JGH_MarshyTerrain</defName>
+		<label>marshy soil</label>
+	</TerrainAffordanceDef>
+	
+</Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SoilGroup</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>WaterShallowGroup</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>MarshGroup</defName>
+	</DesignatorDropdownGroupDef>
+
+</Defs>

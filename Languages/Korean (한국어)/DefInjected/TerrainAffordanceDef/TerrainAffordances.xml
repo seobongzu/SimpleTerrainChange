@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <JGH_Soil.label>토양</JGH_Soil.label>
+  <JGH_Gravel.label>자갈</JGH_Gravel.label>
+  <JGH_Sand.label>모래</JGH_Sand.label>
+  <JGH_SoftSand.label>고운 모래</JGH_SoftSand.label>
+  <JGH_MossyTerrain.label>이끼 낀 땅</JGH_MossyTerrain.label>
+  <JGH_MarshyTerrain.label>습지 토양</JGH_MarshyTerrain.label>
+  
+</LanguageData>

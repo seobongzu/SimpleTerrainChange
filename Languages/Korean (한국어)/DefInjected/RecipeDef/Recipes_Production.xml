@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <Make_JGH_Water.label>물 담기</Make_JGH_Water.label>
+  <Make_JGH_Water.description>물을 담습니다.</Make_JGH_Water.description>
+  <Make_JGH_Water.jobString>물 담는 중.</Make_JGH_Water.jobString>
+  
+  <Make_JGH_SoilWater.label>물 찾기</Make_JGH_SoilWater.label>
+  <Make_JGH_SoilWater.description>땅을 파서 물을 찾습니다.</Make_JGH_SoilWater.description>
+  <Make_JGH_SoilWater.jobString>땅 파는 중.</Make_JGH_SoilWater.jobString>
+   
+  <Make_JGH_Soil.label>흙 모으기</Make_JGH_Soil.label>
+  <Make_JGH_Soil.description>땅을 파서 흙을 얻습니다.</Make_JGH_Soil.description>
+  <Make_JGH_Soil.jobString>땅 파는 중.</Make_JGH_Soil.jobString>
+  
+</LanguageData>

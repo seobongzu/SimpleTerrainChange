@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_JGH_Water</defName>
+		<label>gather water</label>
+		<description>Fill the bucket with water.</description>
+		<jobString>Bailing water.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workAmount>600</workAmount>
+		<recipeUsers>
+			<li>JGH_WaterGatheringSpot</li>
+		</recipeUsers>
+		<products>
+			<JGH_Water>6</JGH_Water>
+		</products>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_JGH_SoilWater</defName>
+		<label>gather water</label>
+		<description>Digging the ground to find water.</description>
+		<jobString>Digging the ground.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workAmount>600</workAmount>
+		<recipeUsers>
+			<li>JGH_SoilGatheringSpot</li>
+		</recipeUsers>
+		<products>
+			<JGH_Water>2</JGH_Water>
+		</products>
+		<workSkill>Mining</workSkill>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>		
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_JGH_Soil</defName>
+		<label>gather soil</label>
+		<description>Digging the ground to obtain soil.</description>
+		<jobString>Digging the ground.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workAmount>600</workAmount>
+		<recipeUsers>
+			<li>JGH_SoilGatheringSpot</li>
+		</recipeUsers>
+		<products>
+			<JGH_Soil>6</JGH_Soil>
+		</products>
+		<workSkill>Mining</workSkill>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	</RecipeDef>
+</Defs>

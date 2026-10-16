@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[sbz] Simple Terrain Change</name>
+	<author>seobongzu</author>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>JGH.Terrain</packageId>
+	<description>You can now dig the ground, gather water, and change the terrain.</description>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/sbz</modIconPath>
+</ModMetaData>

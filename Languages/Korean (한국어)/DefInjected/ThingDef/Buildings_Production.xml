@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <JGH_WaterGatheringSpot.label>물 담는 장소</JGH_WaterGatheringSpot.label>
+  <JGH_WaterGatheringSpot.description>물을 담을 수 있는 장소입니다.</JGH_WaterGatheringSpot.description>
+  
+  <JGH_SoilGatheringSpot.label>땅 파는 장소</JGH_SoilGatheringSpot.label>
+  <JGH_SoilGatheringSpot.description>땅을 파낼 수 있는 장소입니다.</JGH_SoilGatheringSpot.description>
+</LanguageData>

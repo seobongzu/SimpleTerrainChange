@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <JGH_Soil.label>흙</JGH_Soil.label>
+  <JGH_Soil.description>땅을 덮을 수 있는 흙입니다.</JGH_Soil.description>
+  
+  <JGH_Water.label>물</JGH_Water.label>
+  <JGH_Water.description>땅에 뿌려 지형을 바꿀 수 있는 물입니다.</JGH_Water.description>
+</LanguageData>

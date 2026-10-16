@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>JGH_Soil</defName>
+		<label>soil</label>
+		<description>It is soil that can cover the ground.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/JGH_Soil</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>36</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>		
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.1</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>20.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>JGH_Water</defName>
+		<label>water</label>
+		<description>It is water that can be sprinkled on the ground to change the terrain.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/JGH_Water</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>36</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>		
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>0.1</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>20.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

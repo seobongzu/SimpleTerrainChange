@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="sbzTerrianSpots" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Building_WorkTable</thingClass>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+			<WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
+		</statBases>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<uiOrder>2000</uiOrder>
+		<passability>Standable</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<comps>
+			<li Class="CompProperties_ReportWorkSpeed">
+			<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>		
+	</ThingDef>
+  
+	<ThingDef ParentName="sbzTerrianSpots">
+		<defName>JGH_WaterGatheringSpot</defName>
+		<label>water gathering spot</label>
+		<description>It is a place where water can be gathered.</description>	
+		<graphicData>
+			<texPath>Things/Building/Production/WaterGatheringSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>ShallowWater</terrainAffordanceNeeded>
+	</ThingDef>
+
+	<ThingDef ParentName="sbzTerrianSpots">
+		<defName>JGH_SoilGatheringSpot</defName>
+		<label>soil gathering spot</label>
+		<description>It is a place where the ground can be dug.</description>
+		<graphicData>
+			<texPath>Things/Building/Production/SoilGatheringSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+
+</Defs>
